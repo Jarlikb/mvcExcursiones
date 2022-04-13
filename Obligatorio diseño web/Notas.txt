@@ -1,0 +1,3 @@
+Dentro de todo no tuve problemas,pero en el formulario no pude ordenarlo con grid o float,por lo que lo ordene con el position:relative,que no creo que este bien lo que hice
+pero preferi hacerlo asi y no dejarlo sin estilo.
+

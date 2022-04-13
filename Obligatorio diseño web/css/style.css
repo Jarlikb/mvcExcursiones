@@ -1,0 +1,477 @@
+*{margin:0;padding:0;}
+/*ESTILOS PRINCPALES*/
+h2{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+p{
+    font-size: 15px;
+    margin: 10px 0;
+}
+/*HEADER*/
+header{
+    width: 1180px;
+    margin: 0 auto;
+    background-color:#007272 ;
+}
+header p{
+    position: relative;
+    right:150px;
+    top: 160px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+}
+#logo{
+    float: left;
+}
+#logoBanda {
+    position: relative;
+    left:60px;
+    width: 250px;
+    height: auto;
+}
+#spotify{
+    height: auto;
+    float: right;
+}
+#imgSpotify{
+    position: relative;
+    top: 115px;
+    left: -10px;
+    width: 150px;
+    height: auto;
+    text-align: center;
+}
+/*MAIN*/
+main{
+    width: 1180px;
+    background-color: darkcyan;
+    margin: 10px auto;
+    font-family: 'Roboto', sans-serif;
+}
+/*MENU*/
+nav{
+    background-color:darkcyan;
+    clear: both;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    border-collapse: collapse;
+}
+nav ul{
+    text-align: center;
+    list-style-type: none;
+}
+nav ul li{
+    display:inline-block;
+}
+nav ul li a{
+    text-transform: uppercase;
+    color: black;
+    background-color:darkcyan;
+    text-decoration: none;
+    display: block;
+    padding: 10px 30px;
+    text-align: center;
+}
+nav ul li a:hover{
+    background-color: #005858;
+    color: white;
+    border-bottom: 5px solid black;
+}
+.activo{
+    background-color: #005858;
+    color:white;
+    border-bottom: 5px solid black;
+}
+/*HOLA*/
+#hola{
+    letter-spacing: 2px;
+    color: white;
+    padding: 40px;
+    height:250px;
+    font-size: 40px;
+    background-image: url(../Imagenes/tameImpala1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#textoHola{
+    background-color: rgba(0, 0, 0, 0.2);
+    grid-column: 2/2;
+    }
+/*Noticias*/
+#noticias{
+    display: grid;
+    grid-template-columns: auto auto ;
+    overflow: auto;
+    background-color: #007272;
+}
+#n1{
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  margin: 10px;
+}
+#n2{
+    display: grid;
+    grid-column: 2/2;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+  margin: 10px;
+}
+#n1 h3 ,#n2 h3{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+#n1 p ,#n2 p{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    letter-spacing: 1px;
+}
+#n1 figure ,#n2 figure{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    margin-right: 10px;
+}
+#imgNoticia1 ,#imgNoticia2{
+    border-radius: 50px 0px 0px 50px;
+    border: 5px solid black;
+}
+#imgNoticia1:hover ,#imgNoticia2:hover{
+    
+    border: 5px solid white;
+}
+.btnNoticia{
+    text-decoration: none;
+    width: 90px;
+    height: 25px;
+    padding: 5px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    text-align: center;
+   border-radius: 2px;
+   color: white;
+   background-color: black;
+}
+.btnNoticia:hover{
+    text-decoration: none;
+    width: 90px;
+    height: 25px;
+    padding: 5px;
+    text-align: center;
+   border-radius: 2px;
+   color: black;
+   background-color:#f7f7f7;
+}
+/*AGENDA Y FORMULARIO*/
+#agendaYForm{
+    display: grid;
+    background-color: darkcyan;
+    grid-template-columns: auto auto;
+}
+/*AGENDA*/
+table{
+    grid-column: 1/2;
+    border-collapse: collapse;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin: 20px;
+}
+th{
+    text-align: center;
+    text-transform: uppercase;
+    height: 40px;
+    background-color: #141616;
+    color: white;
+    border-right: 5px solid darkcyan;
+}
+td{
+    text-align: center;
+    height: 40px;
+    background-color: #8bcdcd;
+    border-right: 5px solid darkcyan;
+}
+tr{
+    border-bottom: 2px solid #e1e1e1;
+}
+tr:hover td, tr:hover{
+    background-color:#f7f7f7;
+}
+caption{
+    padding: 3px;
+    font-size: 24px;
+    text-align: left;
+}
+/*FORMULARIO*/
+fieldset{
+ grid-column: 2/2;
+ border: none;
+ font-size: 18px;
+ position: relative;
+}
+legend{
+    letter-spacing: 2px;
+    font-size: 30px;
+    color: white;
+}
+label{
+    font-size:20px;
+    padding: 5px;
+    display: block;
+}
+.formu{
+    color: white;
+    text-align: center;
+    height: 40px;
+    background-color: black;
+    border-radius: 10px;
+    border-left: none;
+    border-right: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+#nombre{
+   position: absolute;
+}
+input[type="Text"]{
+    width: 120%;
+}
+#entradas{
+    position: relative;
+    right: -290px;
+}
+input[type="number"]{
+    text-align: center;
+    width: 25%;
+}
+select{
+    width: 87%;
+    position: relative;
+}
+input[type="radio"]{
+    font-size: 100px;
+}
+input[type="submit"]{
+    position: relative;
+    left: 160px;
+    text-decoration: none;
+    width: 110px;
+    height: 30px;
+    padding: 5px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    text-align: center;
+   border:none;
+   color: white;
+   background-color: black;
+}
+input[type="submit"]:hover{
+    position: relative;
+    left: 160px;
+    text-decoration: none;
+    width: 110px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+   border-radius: 2px;
+   color: black;
+   background-color:#f7f7f7;
+}
+/*FOOTER*/
+footer p{
+    color: white;
+    position: relative;
+    letter-spacing: 1px;
+font-size: 25px;
+top: 30px;
+}
+#redes{
+    background-color: #005858;
+    text-align: center;
+}
+#redes ul{
+    list-style-type:none;   
+    display: inline-block;
+    position: relative;
+    left: 120px;
+    top: -15px;
+}
+#redes ul li{
+    width: 32px;
+    height: 32px;
+    background-image: url(../Imagenes/spriteRedes.png);
+    background-repeat: no repeat;
+}
+#twitter{
+    background-position: -32px 0;
+}
+#twitter:hover{
+    background-position: -32px -32px;
+}
+#face{
+    background-position: -64px 0;
+}
+#face:hover{
+    background-position: -64px -32px;
+}
+#insta{
+    background-position: 0 0;
+}
+#insta:hover{
+    background-position: 0 -32px;
+}    
+    
+ /*CONOCENOS*/
+    #conocenos{
+        letter-spacing: 2px;
+        color: white;
+        padding: 40px;
+        height:250px;
+        font-size: 40px;
+        background-image: url(../Imagenes/tame.jpg);
+        background-size: cover;
+    background-attachment: fixed;
+        background-repeat: no-repeat;
+        display: grid;
+        border-bottom: 5px solid white;
+        grid-template-columns: 1fr 1fr;
+    }
+    #textoConocenos{
+        background-color: rgba(0, 0, 0, 0.2);
+    grid-column: 2/2;
+    }
+     /*BIOGRAFIA*/
+     #biografia{
+        display: grid;
+        background-color: #007272;
+        grid-template-columns: 1fr 2fr;
+    }
+     #imgBiografia{
+         grid-column: 2/2;
+         border: 5px solid black;
+         width: 700px;
+       margin: 10px;
+     }
+     #imgBiografia:hover{
+        border: 5px solid white;
+        width: 700px;
+      margin: 10px;
+    }
+    #bio{
+        grid-column: 1/2;
+    }
+     #bio p{
+         padding: 15px;
+         letter-spacing: 2px;
+         font-size: 18px;
+         margin-top: 10px;
+     }
+     #ampliarNoticia{
+         position: relative;
+         left: 30px;
+     }
+
+     /*DISCOGRAFIA*/
+    #discografia{
+        display: grid;
+        grid-template-columns: auto auto ;
+        overflow: auto;
+    }
+    #discoUno{
+      grid-column: 1/2;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto auto;
+      padding-left: 10px;
+    }
+    #discoDos{
+        display: grid;
+        grid-column: 2/2;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        padding-left: 10px;
+    }
+    #discoUno h3 ,#discoDos h3{
+        grid-column: 2/2;
+        grid-row: 1/2;
+    }
+    #discoDos p{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        font-size: 20px;
+    }
+    #discoUno figure ,#discoDos figure{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        margin-right: 10px;
+    }
+    #imgDisco2 ,#imgDisco1{
+        width: 250px;
+        border: 5px solid black;
+    }
+    #imgDisco2:hover ,#imgDisco1:hover{
+        width: 250px;
+        border: 5px solid white;
+    }
+    #btnComprar{
+        position: relative;
+        left: 400px;
+    }
+    #btnEscuchar{
+        grid-row: 4/5;
+        position: relative;
+        right: -500px;
+        top: -5px;
+    }
+.canciones{
+    list-style-position: inside;
+    list-style-image: url(../Imagenes/disco.png);
+}
+
+     /*INTEGRANTES*/
+     #integrantes{
+         background-color: #007272;
+         display: grid;
+         grid-template-columns: auto auto auto auto;
+         grid-row: auto auto auto auto;
+     }
+     #integrantes p,h3{
+         font-size: 18px;
+         padding-left: 25px;
+         letter-spacing: 1px;
+         padding-right: 10px;
+     }
+     #integrante1{
+         grid-column: 1/2;
+     }
+     #imgIntegrante1,#imgIntegrante2,#imgIntegrante3,#imgIntegrante4{
+         border-radius: 50px 0px 0px 50px;
+         padding-left: 25px;
+         border-right: 10px solid black;
+     }
+     #imgIntegrante1:hover,#imgIntegrante2:hover,#imgIntegrante3:hover,#imgIntegrante4:hover{
+        border-radius: 50px 0px 0px 50px;
+        padding-left: 25px;
+        border-right: 10px solid white;
+    }
+     #integrante2{
+         grid-column: 2/3;
+     }
+
+     #integrante3{
+         grid-column: 3/4;
+     }
+     #integrante4{
+grid-column: 4/5;
+     }
+     

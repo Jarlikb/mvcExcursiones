@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina web oficial de Tame Impala">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <title>Tame Impala Oficial</title>
+</head>
+
+<body>
+    <!----------HEADER------------->
+    <header>
+        <figure id="logo">
+            <a href="index.html"><img id="logoBanda" src="imagenes/otroLogo.png" title="Logo de la banda" alt="logoTameImpala"></a>
+        </figure>
+        <figure id="spotify">
+            <p>Escuchar en</p><img id="imgSpotify" src="imagenes/spotify.png" title="Logo Spotify" alt="Logo Spotify">
+        </figure>
+        <nav id="menuTop">
+            <ul id="menu">
+                <li ><a href="index.html" class="activo"> HOLA</a></li><li><a href="conocenos.html">CONOCENOS</a></li><li><a href="Tienda">TIENDA</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!---------- HOLA------------->
+        <section id="hola">
+            <article id="textoHola">
+                <h1>Hola!</h1>
+                <p>Bienvenido a la pagina web oficial de Tame Impala.Aqui podras
+                    encontrar toda la mas reciente informacion sobre la banda,comprar
+                    las entradas a los conciertos antes que nadie y relacionarte con
+                    otros fans de otras partes de el mundo.</p>
+            </article>
+        </section>
+        <!----------NOTICIAS------------->
+        <section id="noticias">
+            <h2>Noticias</h2>
+            <article id="n1">
+                <figure><img id="imgNoticia1" src="Imagenes/noticia1.jpg" title="Vocalista agachado con guitarra"
+                        alt="noticia1">
+                </figure>
+                <h3>Tame Impala en la era covid: el DJ solitario</h3>
+                <p>Siguiendo la tendencia de presentarse con una
+                    banda reducida y con mucho apoyo de máquinas,
+                    Kevin Parker deja en claro en sus recientes
+                    presentaciones que el nuevo álbum de su proyecto
+                    potenció el lado más electrónico y pistero de su sonido.</p>
+                <a class="btnNoticia" href="Ampliar">Ampliar</a>
+            </article>
+            <article id="n2">
+                <figure><img id="imgNoticia2" src="Imagenes/noticia2.jpg" title="Banda tocando en estadio"
+                        alt="noticia2">
+                </figure>
+                <h3>Primer concierto en estadio </h3>
+                <p>Han sido meses complicados para la música, los
+                    artistas han debido permanecer en su casas mientras
+                    esperaban que la pandemia disminuya su fuerza. Aun así,
+                    se empiezan a encender las luces en algunos escenarios
+                    del mundo. </p>
+                <a class="btnNoticia" href="Ampliar">Ampliar</a>
+            </article>
+        </section>
+        <!----------AGENDA------------->
+        <section id="agendaYForm">
+            <h2>Agenda</h2>
+            <table id="tabla">
+                <caption>Eventos</caption>
+                <thead>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th colspan="2">Lugar</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>22-11-2020</td>
+                        <td>09:00 AM</td>
+                        <td>Mallorca - España</td>
+                    </tr>
+                    <tr>
+                        <td>16-12-2020</td>
+                        <td>18:00 PM</td>
+                        <td>Londres - Inglaterra</td>
+                    </tr>
+                    <tr>
+                        <td>28-01-2021</td>
+                        <td>11:00 AM</td>
+                        <td>Nueva York - Estados Unidos</td>
+                    </tr>
+                    <tr>
+                        <td>7-03-2021</td>
+                        <td>17:00 PM</td>
+                        <td>Montevideo - Uruguay</td>
+                    </tr>
+                    <tr>
+                        <td>12-05-2021</td>
+                        <td>19:00 PM</td>
+                        <td>Buenos Aires - Argentina</td>
+                    </tr>
+                    <tr>
+                        <td>19-08-2021</td>
+                        <td>10:00 AM</td>
+                        <td>Rio de Janeiro - Brasil</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!----------FORMULARIO------------->
+            <form action="#" method="POST">
+                <legend>Comprar tickets</legend>
+                <fieldset id="nombre">
+                    <label for="nombreYApellido">Nombre y apellido(*)</label>
+                    <input id="nombreYApellido" class="formu" placeholder="Ingrese su nombre y apellido" type="text"
+                        name="nombreCompleto" required>
+                </fieldset>
+                <fieldset id="entradas">
+                    <label for="cantidadEntradas">Cantidad (*)</label>
+                    <input id="cantidadEntradas" class="formu" type="number" value="1" min="1" max="5"
+                        name="CantidadDeEntradas" required>
+                </fieldset>
+                <fieldset id="evento">
+                    <label for="seleccionarEvento">Evento (*)</label>
+                    <select class="formu" name="Evento" id="seleccionarEvento">
+                        <optgroup label="Europa">
+                            <option value="mallorca">Mallorca - España</option>
+                            <option value="londres">Londres - Inglaterra</option>
+                        </optgroup>
+                        <optgroup label="America">
+                            <option value="nuevaYork">Nueva York - Estados Unidos</option>
+                            <option value="montevideo" selected>Montevideo - Uruguay</option>
+                            <option value="buenosAires">Buenos Aires - Argentina</option>
+                            <option value="rioDeJaneiro">Rio de Janeiro - Brasil</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+                    <label>Forma de pago:</label>
+                    <input type="radio" value="Credito" name="formaDePago" checked>Credito
+                    <input type="radio" value="Debito" name="formaDePago">Debito
+                    <input type="submit" value="Comprar">
+            </form>
+        </section>
+</body>
+<!----------FOOTER------------->
+<footer>
+    <nav id="redes">
+        <p>Seguinos!</p>
+        <ul>
+            <li id="insta"></li>
+            <li id="twitter"></li>
+            <li id="face"></li>
+        </ul>
+    </nav>
+</footer>
+
+</html>
